@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GIPHY SEARCH</title>
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') 
+	}}">
+	
+</head>
+<body>
+	<div class="searchbar">
+		<h1>GIPHY SEARCH</h1>
+		<form action="/results" method="POST">
+			<input name="query" type="text" class="query" placeholder="What are you in the mood for?">
+			<button type="submit" class="searchButton">
+			<i class="icon ion-wand"></i>
+			</button>
+		</form>
+	</div>
+	
+</body>
+</html>
