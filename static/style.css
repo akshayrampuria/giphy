@@ -3,6 +3,7 @@
 body { 
 	font-family: sans-serif;
 	height: 100vh;
+	list-style: none;
 }
 
 .searchbar {
@@ -42,9 +43,14 @@ body {
   font-size: 20px;
 }
 
-.gifs {
+.gifs {	
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+}
+
+li {
+	padding: 9px;
+	border: 1px solid #00B4CC;
 }

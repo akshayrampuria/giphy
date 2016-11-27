@@ -14,7 +14,7 @@ def search():
 def results():
 	
 	params = {}
-	
+	print request.form
 	params['q'] = request.form['query']
 	params['fmt'] = 'json'
 	params['api_key'] = API_KEY
