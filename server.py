@@ -14,7 +14,6 @@ def search():
 def results():
 	
 	params = {}
-	print request.form
 	params['q'] = request.form['query']
 	params['fmt'] = 'json'
 	params['api_key'] = API_KEY
@@ -28,7 +27,6 @@ def results():
 		for url in data:
 			gif_urls.append(url['images']['fixed_width']['url'])
 
-	print gif_urls
 	return render_template('results.html', data=gif_urls)	
 	
 
