@@ -1,2 +1,2 @@
-web: python server.py --host 0.0.0.0:5000
+web: python server.py
 

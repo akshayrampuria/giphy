@@ -29,6 +29,7 @@ def results():
 
 	return render_template('results.html', data=gif_urls)	
 	
+port = int(os.environ.get("PORT", 5000))
+app.debug = True
+app.run(host='0.0.0.0', port=port)
 
-app.debug = True	
-app.run()
