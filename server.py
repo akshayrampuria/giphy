@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-import requests, json
+import requests, json, os
 
 app = Flask(__name__)
 HOST = 'http://api.giphy.com'
